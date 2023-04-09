@@ -16,7 +16,7 @@ Running `python3 replicate.py` must produce a graph showing RA\*'s speedup, simi
 
 Running the script on our machines takes ~20 minutes. To reduce the execution time, please reduce the number of tests by changing `NUM_TESTS = 10` in `replicate.py`. Please ensure that no other applications are running on the system while running the script.
 
-To reproduce the other speedup graphs, please change the corresponding variables in the `replicate.py` script. For example, to reproduce the **Planning Resolution** experiment, please change `MAP_FILES` to `["input-obs/*"]`. Or, to reproduce the **Weighted A** graph, please change `WEIGHTS` to `[1, 2, 4]`.
+To reproduce the other speedup graphs, please change the corresponding variables in the `replicate.py` script. For example, to reproduce the **Planning Resolution** experiment, please change `MAP_FILES` to `["input-obs/*"]`. Or, to reproduce the **Weighted A\*** graph, please change `WEIGHTS` to `[1, 2, 4]`.
 
 ## 1. Source Code
 `xyplan.cpp` is the source code of the baseline A\* and RA\*. The other \*.cpp/.h files are auxiliary. `input-obs/` includes the environment maps with different resolutions (i.e., different _number_ of obstacles). And, `Makefile` includes the metaprogramming of the compilation workflow including the compile flags we use in our experiments.
